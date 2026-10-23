@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-500: #5b5bd6;
+  --color-brand-600: #4646c2;
+  --color-brand-700: #3a37a3;
+  --color-brand-900: #1e1b4b;
+  --color-paper: #f7f6f2;
+  --color-ink: #141a2e;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Grid halus ala buku tulis untuk area hero */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgb(20 26 46 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(20 26 46 / 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.prose-content h1 { font-size: 1.5rem; font-weight: 700; margin: 1.25rem 0 0.5rem; }
+.prose-content h2 { font-size: 1.25rem; font-weight: 700; margin: 1.1rem 0 0.5rem; }
+.prose-content h3 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 0.4rem; }
+.prose-content p { margin: 0.6rem 0; line-height: 1.75; }
+.prose-content ul { list-style: disc; padding-left: 1.4rem; margin: 0.6rem 0; }
+.prose-content ol { list-style: decimal; padding-left: 1.4rem; margin: 0.6rem 0; }
+.prose-content li { margin: 0.25rem 0; }
+.prose-content a { color: var(--color-brand-600); text-decoration: underline; }
+.prose-content blockquote { border-left: 3px solid var(--color-brand-200); padding-left: 1rem; color: #475569; margin: 0.8rem 0; }
+.prose-content code { background: #eef0f5; padding: 0.1rem 0.35rem; border-radius: 0.3rem; font-size: 0.9em; }
+.prose-content img { border-radius: 0.75rem; margin: 0.75rem 0; max-width: 100%; }
+.prose-content table { border-collapse: collapse; margin: 0.75rem 0; width: 100%; font-size: 0.95em; }
+.prose-content th, .prose-content td { border: 1px solid #e2e8f0; padding: 0.4rem 0.6rem; text-align: left; }
+.prose-content th { background: #f8fafc; }
+
+/* html5-qrcode bawaan */
+#qr-reader video { border-radius: 1rem; object-fit: cover; }
+#qr-reader__dashboard_section_csr button,
+#qr-reader__dashboard_section_swaplink {
+  font-size: 0.85rem;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+  .print-area { padding: 0 !important; margin: 0 !important; }
+  @page { margin: 10mm; }
+}
