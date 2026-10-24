@@ -36,7 +36,7 @@ export default async function CardsPage({ params }: { params: Promise<{ id: stri
               <QrInline value={`KUISKU:LOGIN:${s.login_token}`} size={104} />
             </div>
             <div className="min-w-0">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-brand-600">Kartu Login KuisKu</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-brand-600">Kartu Login MBG</p>
               <p className="mt-1 text-lg font-extrabold leading-tight">{s.full_name}</p>
               <p className="mt-1 text-sm text-slate-600">Username: <span className="font-mono font-semibold">{s.username}</span></p>
               {s.nis && <p className="text-sm text-slate-600">NIS: {s.nis}</p>}

@@ -30,7 +30,7 @@ export function ScanClient() {
         router.push(url.pathname + url.search);
         return;
       }
-      toast.error("QR ini bukan milik KuisKu");
+      toast.error("QR ini bukan milik MBG");
       return resume();
     } catch {
       // bukan URL

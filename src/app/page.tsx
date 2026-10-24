@@ -35,7 +35,7 @@ export default async function Home() {
             Ukur belajar dari <span className="text-sky-600">awal</span>, <span className="text-amber-500">tengah</span>, hingga <span className="text-emerald-600">akhir</span> materi.
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-600">
-            KuisKu menyatukan pre-test, kuis formatif, dan post-test dalam satu alur materi — siswa tahu langkah berikutnya, mentor melihat perkembangan nyata.
+            MBG menyatukan pre-test, kuis formatif, dan post-test dalam satu alur materi — siswa tahu langkah berikutnya, mentor melihat perkembangan nyata.
           </p>
           <div className="mt-8 flex justify-center gap-3">
             <LinkButton href="/login" size="lg">
@@ -74,7 +74,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 py-6 text-center text-sm text-slate-500">© {new Date().getFullYear()} KuisKu · Next.js + Supabase</footer>
+      <footer className="border-t border-slate-200 py-6 text-center text-sm text-slate-500">© {new Date().getFullYear()} MBG · Media Belajar Gemilang ·Next.js + Supabase</footer>
     </main>
   );
 }

@@ -36,7 +36,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
             ))}
           </ol>
         </div>
-        <p className="relative text-sm text-white/40">© {new Date().getFullYear()} KuisKu</p>
+        <p className="relative text-sm text-white/40">© {new Date().getFullYear()} MBG · Media Belajar Gemilang</p>
       </section>
 
       <section className="flex items-center justify-center p-6 sm:p-10">

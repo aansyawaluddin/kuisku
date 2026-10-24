@@ -39,7 +39,7 @@ export async function loginWithPassword(_: ActionState, fd: FormData): Promise<A
 export async function loginWithQr(raw: string, next?: string): Promise<ActionState> {
   const token = raw.trim().replace(/^KUISKU:LOGIN:/i, "");
   if (!/^[a-f0-9]{32}$/i.test(token)) {
-    return { error: "QR ini bukan kartu login KuisKu" };
+    return { error: "QR ini bukan kartu login MBG" };
   }
   const admin = createAdminClient();
   const { data: profile } = await admin

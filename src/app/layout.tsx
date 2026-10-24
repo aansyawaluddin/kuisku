@@ -4,8 +4,9 @@ import "@fontsource-variable/plus-jakarta-sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: { default: "KuisKu — Digitalisasi Quiz", template: "%s · KuisKu" },
+  title: { default: "MBG — Media Belajar Gemilang", template: "%s · MBG" },
   description: "Platform pre-test, kuis formatif, dan post-test dalam satu alur materi pembelajaran.",
+  icons: { icon: "/mbg-icon.svg" },
 };
 
 export const viewport: Viewport = {
